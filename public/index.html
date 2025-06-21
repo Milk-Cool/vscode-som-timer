@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Summer of Making countdown & stats</title>
+        <script>let apiKey = "${key}"; const vscode = acquireVsCodeApi();</script>
+        <script src="${script}" defer></script>
+        <link href="${style}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <h3>Today's coding time:</h3>
+            <h1 id="time">Loading...</h1>
+            <h3>Time until Summer of Making ends:</h3>
+            <h1 id="countdown">Loading...</h1>
+            <details>
+                <summary>Settings</summary>
+                <h3>Update key</h3>
+                <input id="key"><button id="submitKey">Update</button>
+            </details>
+        </div>
+    </body>
+</html>

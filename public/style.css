@@ -1,0 +1,25 @@
+body {
+    background: url("https://summer.hackclub.com/assets/bg-cf05d959.svg") #DEC2A4;
+}
+
+#content {
+    position: fixed;
+    top: .5em;
+    left: .5em;
+    width: calc(100vw - 1em);
+    height: calc(100vh - 1em);
+    background: #0006;
+    border-radius: .5em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6,
+#content p,
+#content summary {
+    color: white;
+}

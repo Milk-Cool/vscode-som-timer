@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// Will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "vscode-extension-sidebar-html" is active!');
 
-	const provider = new CustomSidebarViewProvider(context.extensionUri);
+	const provider = new CustomSidebarViewProvider(context.extensionUri, () => context);
 
 	context.subscriptions.push(
 		vscode.window.registerWebviewViewProvider(
