@@ -46,7 +46,7 @@ const update = async () => {
     const stats = await fetchStats(apiKey);
     document.querySelector("#time").innerText = stats.text;
 };
-setInterval(update, 60 * 1000);
+setInterval(update, 3 * 60 * 1000);
 update();
 
 const updateCountdown = () => {
@@ -64,7 +64,7 @@ const updateCurrentlyHacking = async () => {
     });
 };
 updateCurrentlyHacking();
-setInterval(updateCurrentlyHacking, 60 * 1000);
+setInterval(updateCurrentlyHacking, 3 * 60 * 1000);
 
 window.addEventListener("message", e => {
     if(e.data.command !== "currentlyHacking") return;
