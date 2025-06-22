@@ -23,3 +23,7 @@ body {
 #content summary {
     color: white;
 }
+
+summary {
+    cursor: pointer;
+}
