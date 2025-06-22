@@ -4,11 +4,11 @@
   "description": "Summer of Making countdown and hackatime stats",
   "version": "0.1.1",
   "publisher": "Milk_Cool",
-  "homepage": "https://github.com/KumarVariable/vscode-extension-sidebar-html/blob/afded57b2b4e13a002774b0d2d965b0a9024e83d/README.md",
+  "homepage": "https://github.com/Milk-Cool/vscode-som-timer/blob/master/README.md",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KumarVariable/vscode-extension-sidebar-html.git"
+    "url": "https://github.com/Milk-Cool/vscode-som-timer.git"
   },
   "engines": {
     "vscode": "^1.61.0"
@@ -21,44 +21,29 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "custom-activitybar",
-          "title": "VSCode Extension",
+          "id": "som-timer",
+          "title": "Summer of Making",
           "icon": "public/logo_bito.svg"
         }
       ]
     },
     "views": {
-      "custom-activitybar": [
+      "som-timer": [
         {
           "type": "webview",
-          "id": "vscodeSidebar.openview",
-          "name": "View",
-          "contextualTitle": "View",
+          "id": "somTimer.openview",
+          "name": "Timer",
+          "contextualTitle": "Timer",
           "icon": "public/logo_bito.svg"
         }
       ]
     },
     "commands": [
       {
-        "command": "vscodeSidebar.openview",
-        "title": "Sidebar View"
-      },
-      {
-        "command": "vscodeSidebar.menu.view",
-        "category": "vscode-extension-sidebar-html",
-        "title": "Sample WebView in VS Code Sidebar",
-        "icon": "$(clear-all)"
+        "command": "somTimer.openview",
+        "title": "Open Summer of Making timer"
       }
-    ],
-    "menus": {
-      "view/title": [
-        {
-          "command": "vscodeSidebar.menu.view",
-          "group": "navigation",
-          "when": "view == vscodeSidebar.openview"
-        }
-      ]
-    }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

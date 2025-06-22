@@ -1,8 +1,8 @@
 import * as vscode from "vscode";
 import * as fs from "fs";
 
-export class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
-  public static readonly viewType = "vscodeSidebar.openview";
+export class HackClubViewProvider implements vscode.WebviewViewProvider {
+  public static readonly viewType = "somTimer.openview";
 
   private _view?: vscode.WebviewView;
 
