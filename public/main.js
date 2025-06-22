@@ -58,15 +58,15 @@ const updateCountdown = () => {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-const updateLeaderboard = async () => {
+const updateCurrentlyHacking = async () => {
     vscode.postMessage({
-        command: "getLeaderboard"
+        command: "getCurrentlyHacking"
     });
 };
-updateLeaderboard();
-setInterval(updateLeaderboard, 60 * 1000);
+updateCurrentlyHacking();
+setInterval(updateCurrentlyHacking, 60 * 1000);
 
 window.addEventListener("message", e => {
-    if(e.data.command !== "leaderboard") return;
-    document.querySelector("#leaderboard").innerHTML = e.data.leaderboard;
+    if(e.data.command !== "currentlyHacking") return;
+    document.querySelector("#currently_hacking").innerHTML = e.data.currentlyHacking;
 });
