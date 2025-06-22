@@ -3,7 +3,7 @@
   "displayName": "Summer of Making timer",
   "description": "Summer of Making countdown and hackatime stats",
   "version": "0.1.1",
-  "publisher": "Milk_Cool",
+  "publisher": "milkcool",
   "homepage": "https://github.com/Milk-Cool/vscode-som-timer/blob/master/README.md",
   "license": "BSD-3-Clause",
   "repository": {
@@ -45,6 +45,9 @@
       }
     ]
   },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
