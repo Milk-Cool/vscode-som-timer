@@ -2,7 +2,7 @@
   "name": "vscode-som-timer",
   "displayName": "Summer of Making timer",
   "description": "Summer of Making countdown and hackatime stats",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "Milk_Cool",
   "homepage": "https://github.com/KumarVariable/vscode-extension-sidebar-html/blob/afded57b2b4e13a002774b0d2d965b0a9024e83d/README.md",
   "license": "BSD-3-Clause",
@@ -67,9 +67,9 @@
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
-    "@types/vscode": "^1.61.0",
     "@types/glob": "^7.1.4",
     "@types/node": "14.x",
+    "@types/vscode": "^1.61.0",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "eslint": "^7.32.0",

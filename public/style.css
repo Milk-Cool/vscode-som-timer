@@ -12,6 +12,8 @@ body {
     border-radius: .5em;
     padding: 1em;
     box-sizing: border-box;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 #content h1,
 #content h2,
@@ -26,4 +28,18 @@ body {
 
 summary {
     cursor: pointer;
+}
+
+.currently-hacking-list > ul {
+    padding-inline-start: 0;
+}
+.currently-hacking-list a {
+    color: #cacaee;
+}
+.user-info > span {
+    font-size: 21px;
+    vertical-align: top;
+}
+.user-info > img {
+    border-radius: 50%;
 }

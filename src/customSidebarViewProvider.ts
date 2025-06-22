@@ -22,8 +22,15 @@ export class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
     };
     webviewView.webview.html = await this.getHtmlContent(webviewView.webview);
     webviewView.webview.onDidReceiveMessage(async msg => {
-      if(msg.command === "alert") {
+      if(msg.command === "alert")
         return vscode.window.showInformationMessage(msg.msg);
+      if(msg.command === "getLeaderboard") {
+        const f = await fetch("https://hackatime.hackclub.com/static_pages/currently_hacking");
+        const t = await f.text();
+        webviewView.webview.postMessage({
+          command: "leaderboard",
+          leaderboard: t
+        });
       }
       if(msg.command !== "saveKey") return;
       await this._getExtensionContext().secrets.store("hackatimeKey", msg.key);

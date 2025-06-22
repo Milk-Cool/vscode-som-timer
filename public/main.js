@@ -1,5 +1,3 @@
-console.log(apiKey, vscode);
-
 /**
  * @param {string} key 
  * @returns {{ text: string, total_seconds: number } | null}
@@ -59,3 +57,16 @@ const updateCountdown = () => {
 };
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+const updateLeaderboard = async () => {
+    vscode.postMessage({
+        command: "getLeaderboard"
+    });
+};
+updateLeaderboard();
+setInterval(updateLeaderboard, 60 * 1000);
+
+window.addEventListener("message", e => {
+    if(e.data.command !== "leaderboard") return;
+    document.querySelector("#leaderboard").innerHTML = e.data.leaderboard;
+});
