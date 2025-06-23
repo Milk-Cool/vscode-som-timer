@@ -7,4 +7,6 @@ This is a very simple extension that lets you track your Hacktime time and time 
 Download the [latest release](https://github.com/Milk-Cool/vscode-som-timer/releases) and install it in VSCode using Extensions -> Three dots -> Install from VSIX. Then, open the extension view from the left side panel or from command palette, go to settings and paste in your [Hackatime token](https://hackatime.hackclub.com/my/settings).
 
 ## A word of advice
-PLEASE DO NOT PLAY WITH THE EXTENSION! If you reopen the view a few too many times, you **WILL LIKELY GET BANNED**!
+~~PLEASE DO NOT PLAY WITH THE EXTENSION! If you reopen the view a few too many times, you **WILL LIKELY GET BANNED**!~~
+
+Nevermind, that was a false ban
